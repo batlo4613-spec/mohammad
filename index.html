@@ -34,13 +34,19 @@
 </header>
 <main id="homeView">
 <section class="hero" id="home" aria-label="Welcome to Horizon Properties" data-i18n-aria="hero.aria">
-  <img class="hero-bg" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=88" alt="Modern luxury villa with glass walls and a swimming pool" data-i18n-alt="hero.imgAlt" fetchpriority="high">
-  <div class="hero-content">
-    <h1 data-i18n-html="hero.title">Discover Exceptional<br>Homes &amp; Investments</h1>
-    <p data-i18n-html="hero.copy">Premium properties in prime locations. Find your dream home<br class="desktop-break"> or the perfect investment with confidence.</p>
-    <div class="hero-actions"><a class="btn" href="#properties" data-view="properties"><span data-i18n="hero.cta1">Explore Properties</span> <span class="arrow" data-i18n="arrow.next">→</span></a><a class="btn btn-outline" href="#contact"><span data-i18n="hero.cta2">Speak to an Expert</span></a></div>
+  <div class="hero-stage">
+    <img class="hero-bg" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=88" alt="Modern luxury villa with glass walls and a swimming pool" data-i18n-alt="hero.imgAlt" fetchpriority="high">
+    <video class="hero-video" id="heroVideo" muted playsinline preload="auto" disablepictureinpicture aria-hidden="true" tabindex="-1">
+      <source src="assets/media/hero-scrub.mp4" type="video/mp4">
+    </video>
+    <div class="hero-content">
+      <h1 data-i18n-html="hero.title">Discover Exceptional<br>Homes &amp; Investments</h1>
+      <p data-i18n-html="hero.copy">Premium properties in prime locations. Find your dream home<br class="desktop-break"> or the perfect investment with confidence.</p>
+      <div class="hero-actions"><a class="btn" href="#properties" data-view="properties"><span data-i18n="hero.cta1">Explore Properties</span> <span class="arrow" data-i18n="arrow.next">→</span></a><a class="btn btn-outline" href="#contact"><span data-i18n="hero.cta2">Speak to an Expert</span></a></div>
+    </div>
+    <a class="hero-scroll" href="#about" data-i18n="hero.scroll">Discover Horizon</a>
+    <div class="hero-progress" id="heroProgress" aria-hidden="true"><span></span></div>
   </div>
-  <a class="hero-scroll" href="#about" data-i18n="hero.scroll">Discover Horizon</a>
 </section>
 <section class="about" id="about">
   <div class="container about-grid reveal">
@@ -119,5 +125,6 @@
 <script src="assets/i18n.js" defer></script>
 <script src="assets/data.js" defer></script>
 <script src="assets/app.js" defer></script>
+<script src="assets/hero-scroll.js" defer></script>
 </body>
 </html>
