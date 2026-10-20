@@ -1,16 +1,17 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="theme-color" content="#08294d">
-<meta name="description" content="Discover exceptional homes and investment properties with Horizon Properties.">
-<title>Horizon Properties — Exceptional Homes & Investments</title>
+<meta name="description" content="Discover exceptional homes and investment properties with Horizon Properties." data-i18n-content="meta.description">
+<title data-i18n="meta.title">Horizon Properties — Exceptional Homes &amp; Investments</title>
 <link rel="preconnect" href="https://images.unsplash.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="assets/styles.css">
+<script>try{if(localStorage.getItem("horizonLocale")==="fa"){document.documentElement.lang="fa";document.documentElement.dir="rtl"}}catch(e){}</script>
 </head>
 <body>
 <header class="header" id="header">
@@ -19,98 +20,104 @@
       <svg class="brand-mark" viewBox="0 0 40 46" fill="none" aria-hidden="true"><path d="M3 43V18L12 10V43M12 43V7L20 2V43M20 43V17L28 10V43M28 43V22L37 16V43" stroke="currentColor" stroke-width="1.5"/><path d="M12 10L20 17M20 17L28 10" stroke="currentColor" stroke-width="1.2"/></svg>
       <span class="brand-name">HORIZON<small>PROPERTIES</small></span>
     </a>
-    <nav class="nav-links" id="navLinks" aria-label="Main navigation">
-      <a href="#home" class="active">Home</a><a href="#properties" data-view="properties">Properties</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#team">Team</a><a href="#contact">Contact</a>
-      <a class="mobile-phone" href="tel:+15552467890">☎ &nbsp; (555) 246-7890</a>
+    <nav class="nav-links" id="navLinks" aria-label="Main navigation" data-i18n-aria="nav.main">
+      <a href="#home" class="active" data-i18n="nav.home">Home</a><a href="#properties" data-view="properties" data-i18n="nav.properties">Properties</a><a href="#about" data-i18n="nav.about">About Us</a><a href="#services" data-i18n="nav.services">Services</a><a href="#team" data-i18n="nav.team">Team</a><a href="#contact" data-i18n="nav.contact">Contact</a>
+      <a class="mobile-phone" href="tel:+15552467890">☎ &nbsp; <span dir="ltr" data-i18n="call.number">(555) 246-7890</span></a>
     </nav>
-    <a class="phone-link" href="tel:+15552467890" aria-label="Call Horizon Properties"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a15 15 0 0 0 6 6L16 13l5 2v4c0 1.1-.9 2-2 2C10 21 3 14 3 5c0-1.1.9-2 2-2Z"/></svg>(555) 246-7890</a>
-    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" aria-expanded="false">☰</button>
+    <div class="lang-switch" role="group" aria-label="Language" data-i18n-aria="lang.group">
+      <button type="button" data-lang="en" aria-pressed="true" aria-label="English">EN</button>
+      <button type="button" data-lang="fa" aria-pressed="false" aria-label="فارسی">فا</button>
+    </div>
+    <a class="phone-link" href="tel:+15552467890" aria-label="Call Horizon Properties" data-i18n-aria="call.aria"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M5 3h4l2 5-2.5 1.5a15 15 0 0 0 6 6L16 13l5 2v4c0 1.1-.9 2-2 2C10 21 3 14 3 5c0-1.1.9-2 2-2Z"/></svg><span dir="ltr" data-i18n="call.number">(555) 246-7890</span></a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation menu" data-i18n-aria="nav.menu.open" aria-expanded="false">☰</button>
   </div>
 </header>
 <main id="homeView">
-<section class="hero" id="home" aria-label="Welcome to Horizon Properties">
-  <img class="hero-bg" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=88" alt="Modern luxury villa with glass walls and a swimming pool" fetchpriority="high">
+<section class="hero" id="home" aria-label="Welcome to Horizon Properties" data-i18n-aria="hero.aria">
+  <img class="hero-bg" src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=2200&q=88" alt="Modern luxury villa with glass walls and a swimming pool" data-i18n-alt="hero.imgAlt" fetchpriority="high">
   <div class="hero-content">
-    <h1>Discover Exceptional<br>Homes &amp; Investments</h1>
-    <p>Premium properties in prime locations. Find your dream home<br class="desktop-break"> or the perfect investment with confidence.</p>
-    <div class="hero-actions"><a class="btn" href="#properties" data-view="properties">Explore Properties <span class="arrow">→</span></a><a class="btn btn-outline" href="#contact">Speak to an Expert</a></div>
+    <h1 data-i18n-html="hero.title">Discover Exceptional<br>Homes &amp; Investments</h1>
+    <p data-i18n-html="hero.copy">Premium properties in prime locations. Find your dream home<br class="desktop-break"> or the perfect investment with confidence.</p>
+    <div class="hero-actions"><a class="btn" href="#properties" data-view="properties"><span data-i18n="hero.cta1">Explore Properties</span> <span class="arrow" data-i18n="arrow.next">→</span></a><a class="btn btn-outline" href="#contact"><span data-i18n="hero.cta2">Speak to an Expert</span></a></div>
   </div>
-  <a class="hero-scroll" href="#about">Discover Horizon</a>
+  <a class="hero-scroll" href="#about" data-i18n="hero.scroll">Discover Horizon</a>
 </section>
 <section class="about" id="about">
   <div class="container about-grid reveal">
-    <div class="about-copy"><p class="eyebrow">About Us</p><h2 class="section-title">Who We Are</h2><p class="section-copy">At Horizon Properties, we connect people with extraordinary homes and smart investments. Integrity, transparency, and client satisfaction are at the heart of everything we do.</p><a class="btn" href="#services">Learn More <span class="arrow">→</span></a></div>
-    <div class="about-visual"><a class="about-main" href="#properties" data-view="properties" aria-label="Explore our properties"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=82" alt="Contemporary luxury home surrounded by landscaped gardens"></a><div class="about-side"><img loading="lazy" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=500&q=80" alt="Sunlit contemporary villa detail"><button class="about-next" id="aboutNext" aria-label="View another property image">→</button></div></div>
+    <div class="about-copy"><p class="eyebrow" data-i18n="about.eyebrow">About Us</p><h2 class="section-title" data-i18n="about.title">Who We Are</h2><p class="section-copy" data-i18n="about.copy">At Horizon Properties, we connect people with extraordinary homes and smart investments. Integrity, transparency, and client satisfaction are at the heart of everything we do.</p><a class="btn" href="#services"><span data-i18n="about.cta">Learn More</span> <span class="arrow" data-i18n="arrow.next">→</span></a></div>
+    <div class="about-visual"><a class="about-main" href="#properties" data-view="properties" aria-label="Explore our properties" data-i18n-aria="about.mainAria"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687920-4e2a09cf159d?auto=format&fit=crop&w=1000&q=82" alt="Contemporary luxury home surrounded by landscaped gardens" data-i18n-alt="about.mainAlt"></a><div class="about-side"><img loading="lazy" src="https://images.unsplash.com/photo-1600566753086-00f18fb6b3ea?auto=format&fit=crop&w=500&q=80" alt="Sunlit contemporary villa detail" data-i18n-alt="about.sideAlt"><button class="about-next" id="aboutNext" aria-label="View another property image" data-i18n-aria="about.nextAria" data-i18n="arrow.next">→</button></div></div>
   </div>
 </section>
 <section class="featured" id="featured">
   <div class="container">
-    <div class="section-heading reveal"><p class="eyebrow">Featured</p><h2 class="section-title">Featured Properties</h2></div>
+    <div class="section-heading reveal"><p class="eyebrow" data-i18n="featured.eyebrow">Featured</p><h2 class="section-title" data-i18n="featured.title">Featured Properties</h2></div>
     <div class="carousel-shell reveal">
-      <button class="icon-btn carousel-control prev" id="prevProperties" aria-label="Previous properties">←</button>
-      <div class="property-track" id="featuredTrack" tabindex="0" aria-label="Featured property carousel"></div>
-      <button class="icon-btn carousel-control next" id="nextProperties" aria-label="Next properties">→</button>
+      <button class="icon-btn carousel-control prev" id="prevProperties" aria-label="Previous properties" data-i18n-aria="featured.prevAria" data-i18n="arrow.prev">←</button>
+      <div class="property-track" id="featuredTrack" tabindex="0" aria-label="Featured property carousel" data-i18n-aria="featured.trackAria"></div>
+      <button class="icon-btn carousel-control next" id="nextProperties" aria-label="Next properties" data-i18n-aria="featured.nextAria" data-i18n="arrow.next">→</button>
     </div>
   </div>
 </section>
 <section class="services" id="services"><div class="container">
-  <div class="services-top reveal"><div><p class="eyebrow">What We Do</p><h2 class="section-title">A considered approach<br>to exceptional property.</h2></div><p class="section-copy">From finding a remarkable home to building a considered investment portfolio, our guidance is personal, informed, and always focused on your goals.</p></div>
+  <div class="services-top reveal"><div><p class="eyebrow" data-i18n="services.eyebrow">What We Do</p><h2 class="section-title" data-i18n-html="services.title">A considered approach<br>to exceptional property.</h2></div><p class="section-copy" data-i18n="services.copy">From finding a remarkable home to building a considered investment portfolio, our guidance is personal, informed, and always focused on your goals.</p></div>
   <div class="service-grid reveal">
-    <article class="service-item"><span class="service-num">01</span><div><h3>Luxury Home Sales</h3><p>Thoughtful guidance through every step of buying or selling an exceptional home.</p></div></article>
-    <article class="service-item"><span class="service-num">02</span><div><h3>Property Investment</h3><p>Local insight and considered opportunities for long-term property value.</p></div></article>
-    <article class="service-item"><span class="service-num">03</span><div><h3>Property Marketing</h3><p>Distinctive presentation and strategic reach for properties that deserve more.</p></div></article>
-    <article class="service-item"><span class="service-num">04</span><div><h3>Real Estate Advisory</h3><p>Clear, research-led advice to help you make confident property decisions.</p></div></article>
-    <article class="service-item"><span class="service-num">05</span><div><h3>Property Valuation</h3><p>Market-aware property assessments grounded in local knowledge and detail.</p></div></article>
-    <article class="service-item"><span class="service-num">06</span><div><h3>Relocation Services</h3><p>A seamless move, with neighbourhood guidance tailored to your lifestyle.</p></div></article>
+    <article class="service-item"><span class="service-num">01</span><div><h3 data-i18n="services.1.title">Luxury Home Sales</h3><p data-i18n="services.1.copy">Thoughtful guidance through every step of buying or selling an exceptional home.</p></div></article>
+    <article class="service-item"><span class="service-num">02</span><div><h3 data-i18n="services.2.title">Property Investment</h3><p data-i18n="services.2.copy">Local insight and considered opportunities for long-term property value.</p></div></article>
+    <article class="service-item"><span class="service-num">03</span><div><h3 data-i18n="services.3.title">Property Marketing</h3><p data-i18n="services.3.copy">Distinctive presentation and strategic reach for properties that deserve more.</p></div></article>
+    <article class="service-item"><span class="service-num">04</span><div><h3 data-i18n="services.4.title">Real Estate Advisory</h3><p data-i18n="services.4.copy">Clear, research-led advice to help you make confident property decisions.</p></div></article>
+    <article class="service-item"><span class="service-num">05</span><div><h3 data-i18n="services.5.title">Property Valuation</h3><p data-i18n="services.5.copy">Market-aware property assessments grounded in local knowledge and detail.</p></div></article>
+    <article class="service-item"><span class="service-num">06</span><div><h3 data-i18n="services.6.title">Relocation Services</h3><p data-i18n="services.6.copy">A seamless move, with neighbourhood guidance tailored to your lifestyle.</p></div></article>
   </div>
 </div></section>
 <section class="why"><div class="container why-grid reveal">
-  <div class="why-image"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1100&q=85" alt="Architectural residence with warm lighting and expansive windows"></div>
-  <div class="why-copy"><p class="eyebrow">The Horizon Difference</p><h2 class="section-title">More than a property.<br>A better perspective.</h2><p class="section-copy">The right property is about more than an address. We bring careful listening, deep market knowledge, and a personal approach to every relationship.</p>
-    <div class="benefits"><div class="benefit"><span class="benefit-icon">◇</span><div><strong>Local Expertise</strong><span>Insight into the markets that matter.</span></div></div><div class="benefit"><span class="benefit-icon">⌁</span><div><strong>Personal Guidance</strong><span>Advice shaped around your priorities.</span></div></div><div class="benefit"><span class="benefit-icon">↗</span><div><strong>Investment Insight</strong><span>Perspective beyond the asking price.</span></div></div><div class="benefit"><span class="benefit-icon">✓</span><div><strong>Trusted Service</strong><span>Clarity and care from start to finish.</span></div></div></div>
+  <div class="why-image"><img loading="lazy" src="https://images.unsplash.com/photo-1600607687644-c7171b42498f?auto=format&fit=crop&w=1100&q=85" alt="Architectural residence with warm lighting and expansive windows" data-i18n-alt="why.imgAlt"></div>
+  <div class="why-copy"><p class="eyebrow" data-i18n="why.eyebrow">The Horizon Difference</p><h2 class="section-title" data-i18n-html="why.title">More than a property.<br>A better perspective.</h2><p class="section-copy" data-i18n="why.copy">The right property is about more than an address. We bring careful listening, deep market knowledge, and a personal approach to every relationship.</p>
+    <div class="benefits"><div class="benefit"><span class="benefit-icon">◇</span><div><strong data-i18n="why.b1.title">Local Expertise</strong><span data-i18n="why.b1.copy">Insight into the markets that matter.</span></div></div><div class="benefit"><span class="benefit-icon">⌁</span><div><strong data-i18n="why.b2.title">Personal Guidance</strong><span data-i18n="why.b2.copy">Advice shaped around your priorities.</span></div></div><div class="benefit"><span class="benefit-icon">↗</span><div><strong data-i18n="why.b3.title">Investment Insight</strong><span data-i18n="why.b3.copy">Perspective beyond the asking price.</span></div></div><div class="benefit"><span class="benefit-icon">✓</span><div><strong data-i18n="why.b4.title">Trusted Service</strong><span data-i18n="why.b4.copy">Clarity and care from start to finish.</span></div></div></div>
   </div>
 </div></section>
 <section class="team" id="team"><div class="container">
-  <div class="team-head reveal"><p class="eyebrow">The People Behind Horizon</p><h2 class="section-title">Meet Your Property Partners</h2></div>
+  <div class="team-head reveal"><p class="eyebrow" data-i18n="team.eyebrow">The People Behind Horizon</p><h2 class="section-title" data-i18n="team.title">Meet Your Property Partners</h2></div>
   <div class="team-grid reveal">
-    <article class="team-card"><div class="team-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=82" alt="Daniel Morgan, managing director"></div><div class="team-meta"><span class="team-social">in ↗</span><h3>Daniel Morgan</h3><p>Managing Director</p></div></article>
-    <article class="team-card"><div class="team-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=82" alt="Olivia Carter, luxury property advisor"></div><div class="team-meta"><span class="team-social">in ↗</span><h3>Olivia Carter</h3><p>Luxury Property Advisor</p></div></article>
-    <article class="team-card"><div class="team-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=82" alt="James Wilson, investment consultant"></div><div class="team-meta"><span class="team-social">in ↗</span><h3>James Wilson</h3><p>Investment Consultant</p></div></article>
-    <article class="team-card"><div class="team-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=82" alt="Sophia Bennett, senior property specialist"></div><div class="team-meta"><span class="team-social">in ↗</span><h3>Sophia Bennett</h3><p>Senior Property Specialist</p></div></article>
+    <article class="team-card"><div class="team-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1560250097-0b93528c311a?auto=format&fit=crop&w=600&q=82" alt="Daniel Morgan, managing director" data-i18n-alt="team.1.alt"></div><div class="team-meta"><span class="team-social">in ↗</span><h3 data-i18n="team.1.name">Daniel Morgan</h3><p data-i18n="team.1.role">Managing Director</p></div></article>
+    <article class="team-card"><div class="team-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=600&q=82" alt="Olivia Carter, luxury property advisor" data-i18n-alt="team.2.alt"></div><div class="team-meta"><span class="team-social">in ↗</span><h3 data-i18n="team.2.name">Olivia Carter</h3><p data-i18n="team.2.role">Luxury Property Advisor</p></div></article>
+    <article class="team-card"><div class="team-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=82" alt="James Wilson, investment consultant" data-i18n-alt="team.3.alt"></div><div class="team-meta"><span class="team-social">in ↗</span><h3 data-i18n="team.3.name">James Wilson</h3><p data-i18n="team.3.role">Investment Consultant</p></div></article>
+    <article class="team-card"><div class="team-photo"><img loading="lazy" src="https://images.unsplash.com/photo-1551836022-d5d88e9218df?auto=format&fit=crop&w=600&q=82" alt="Sophia Bennett, senior property specialist" data-i18n-alt="team.4.alt"></div><div class="team-meta"><span class="team-social">in ↗</span><h3 data-i18n="team.4.name">Sophia Bennett</h3><p data-i18n="team.4.role">Senior Property Specialist</p></div></article>
   </div>
 </div></section>
 <section class="cta" id="contact"><div class="container"><div class="cta-panel reveal">
   <div class="cta-icon"><svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true"><circle cx="12" cy="9" r="4.5"/><path d="M12 13.5v13M9 26.5h6M12 17l7-6M20 10l3 3M19 11l-2-2M18 12l-2-2"/><circle cx="22.5" cy="8.5" r="2.5"/></svg></div>
-  <div class="cta-copy"><h2>Ready to Find Your Perfect Property?</h2><p>Let our experts guide you to the right home or investment.</p></div>
-  <button class="btn" data-contact>Get in Touch <span class="arrow">→</span></button>
+  <div class="cta-copy"><h2 data-i18n="cta.title">Ready to Find Your Perfect Property?</h2><p data-i18n="cta.copy">Let our experts guide you to the right home or investment.</p></div>
+  <button class="btn" data-contact><span data-i18n="cta.btn">Get in Touch</span> <span class="arrow" data-i18n="arrow.next">→</span></button>
 </div></div></section>
 </main>
 <section id="propertiesView" class="listing-section" hidden>
   <div class="container">
-    <div class="listing-head"><div><p class="eyebrow">The Collection</p><h1 class="section-title">Find Your Property</h1><p class="section-copy">Explore distinctive homes and considered investment opportunities.</p></div><button class="btn btn-light" id="backHome">← Back to Home</button></div>
+    <div class="listing-head"><div><p class="eyebrow" data-i18n="properties.eyebrow">The Collection</p><h1 class="section-title" data-i18n="properties.title">Find Your Property</h1><p class="section-copy" data-i18n="properties.copy">Explore distinctive homes and considered investment opportunities.</p></div><button class="btn btn-light" id="backHome"><span class="arrow" data-i18n="arrow.prev">←</span> <span data-i18n="properties.back">Back to Home</span></button></div>
     <form class="search-panel" id="searchForm">
-      <div class="field"><label for="searchText">Search</label><input id="searchText" type="search" placeholder="Name or location"></div>
-      <div class="field"><label for="locationFilter">Location</label><select id="locationFilter"><option value="">All locations</option><option>Austin</option><option>Malibu</option><option>Scottsdale</option><option>Miami</option><option>Los Angeles</option><option>Beverly Hills</option><option>Lake Tahoe</option></select></div>
-      <div class="field"><label for="typeFilter">Property type</label><select id="typeFilter"><option value="">All types</option><option>Villa</option><option>Estate</option><option>Residence</option><option>Penthouse</option><option>Retreat</option><option>House</option></select></div>
-      <div class="field"><label for="priceFilter">Maximum price</label><select id="priceFilter"><option value="">Any price</option><option value="2000000">$2 Million</option><option value="3000000">$3 Million</option><option value="4000000">$4 Million</option><option value="5000000">$5 Million</option></select></div>
-      <div class="field"><label for="sortFilter">Sort by</label><select id="sortFilter"><option value="featured">Featured</option><option value="low">Price: low to high</option><option value="high">Price: high to low</option></select></div>
-      <button class="btn" type="submit">Search <span class="arrow">→</span></button>
+      <div class="field"><label for="searchText" data-i18n="properties.searchLabel">Search</label><input id="searchText" type="search" placeholder="Name or location" data-i18n-placeholder="properties.searchPlaceholder"></div>
+      <div class="field"><label for="locationFilter" data-i18n="properties.locationLabel">Location</label><select id="locationFilter"></select></div>
+      <div class="field"><label for="typeFilter" data-i18n="properties.typeLabel">Property type</label><select id="typeFilter"></select></div>
+      <div class="field"><label for="priceFilter" data-i18n="properties.priceLabel">Maximum price</label><select id="priceFilter"></select></div>
+      <div class="field"><label for="sortFilter" data-i18n="properties.sortLabel">Sort by</label><select id="sortFilter"></select></div>
+      <button class="btn" type="submit"><span data-i18n="properties.submit">Search</span> <span class="arrow" data-i18n="arrow.next">→</span></button>
     </form>
     <p class="results-count" id="resultsCount" aria-live="polite"></p><div class="listing-grid" id="listingGrid"></div>
   </div>
 </section>
 <footer class="footer" id="siteFooter"><div class="container">
   <div class="footer-grid">
-    <div><a class="brand" href="#home"><svg class="brand-mark" viewBox="0 0 40 46" fill="none" aria-hidden="true"><path d="M3 43V18L12 10V43M12 43V7L20 2V43M20 43V17L28 10V43M28 43V22L37 16V43" stroke="currentColor" stroke-width="1.5"/><path d="M12 10L20 17M20 17L28 10" stroke="currentColor" stroke-width="1.2"/></svg><span class="brand-name">HORIZON<small>PROPERTIES</small></span></a><p class="footer-about">Exceptional homes. Considered investments. Personal guidance for every step of your property journey.</p></div>
-    <div><h3>Explore</h3><nav class="footer-links"><a href="#home">Home</a><a href="#properties" data-view="properties">Properties</a><a href="#about">About Us</a><a href="#services">Services</a><a href="#team">Team</a><a href="#contact">Contact</a></nav></div>
-    <div><h3>Get in Touch</h3><div class="footer-contact"><p>☎ &nbsp; (555) 246-7890</p><p>✉ &nbsp; hello@horizonproperties.com</p><p>⌖ &nbsp; 1200 Westlake Avenue<br>&nbsp;&nbsp;&nbsp;&nbsp;Austin, TX 78701</p></div></div>
-    <div class="newsletter"><h3>Stay in the Know</h3><p>Thoughtful property insights and new listings, delivered occasionally.</p><form class="newsletter-form" id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="Your email address" aria-label="Your email address" required><button aria-label="Subscribe to newsletter" type="submit">→</button></form><div class="newsletter-message" id="newsletterMessage" aria-live="polite"></div></div>
+    <div><a class="brand" href="#home"><svg class="brand-mark" viewBox="0 0 40 46" fill="none" aria-hidden="true"><path d="M3 43V18L12 10V43M12 43V7L20 2V43M20 43V17L28 10V43M28 43V22L37 16V43" stroke="currentColor" stroke-width="1.5"/><path d="M12 10L20 17M20 17L28 10" stroke="currentColor" stroke-width="1.2"/></svg><span class="brand-name">HORIZON<small>PROPERTIES</small></span></a><p class="footer-about" data-i18n="footer.about">Exceptional homes. Considered investments. Personal guidance for every step of your property journey.</p></div>
+    <div><h3 data-i18n="footer.explore">Explore</h3><nav class="footer-links"><a href="#home" data-i18n="nav.home">Home</a><a href="#properties" data-view="properties" data-i18n="nav.properties">Properties</a><a href="#about" data-i18n="nav.about">About Us</a><a href="#services" data-i18n="nav.services">Services</a><a href="#team" data-i18n="nav.team">Team</a><a href="#contact" data-i18n="nav.contact">Contact</a></nav></div>
+    <div><h3 data-i18n="footer.touch">Get in Touch</h3><div class="footer-contact"><p>☎ &nbsp; <span dir="ltr" data-i18n="call.number">(555) 246-7890</span></p><p>✉ &nbsp; hello@horizonproperties.com</p><p>⌖ &nbsp; <span data-i18n-html="footer.address">1200 Westlake Avenue<br>&nbsp;&nbsp;&nbsp;&nbsp;Austin, TX 78701</span></p></div></div>
+    <div class="newsletter"><h3 data-i18n="footer.newsletter">Stay in the Know</h3><p data-i18n="footer.newsletterCopy">Thoughtful property insights and new listings, delivered occasionally.</p><form class="newsletter-form" id="newsletterForm"><input type="email" id="newsletterEmail" placeholder="Your email address" aria-label="Your email address" data-i18n-placeholder="footer.emailPlaceholder" data-i18n-aria="footer.emailPlaceholder" required><button aria-label="Subscribe to newsletter" data-i18n-aria="footer.subscribeAria" type="submit"><span class="arrow" data-i18n="arrow.next">→</span></button></form><p class="form-note" data-i18n="form.newsletterNote">Not connected to a server yet.</p><div class="newsletter-message" id="newsletterMessage" aria-live="polite"></div></div>
   </div>
-  <div class="footer-bottom"><span>© <span id="year"></span> Horizon Properties. All rights reserved.</span><div class="socials"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">Instagram ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">LinkedIn ↗</a></div><span>Privacy · Terms</span></div>
+  <div class="footer-bottom"><span>© <span id="year"></span> <span data-i18n="footer.rights">Horizon Properties. All rights reserved.</span></span><div class="socials"><a href="https://www.instagram.com/" target="_blank" rel="noreferrer" aria-label="Instagram">Instagram ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer" aria-label="LinkedIn">LinkedIn ↗</a></div><span data-i18n="footer.privacy">Privacy · Terms</span></div>
 </div></footer>
 <div class="modal-backdrop" id="propertyModal" role="dialog" aria-modal="true" aria-label="Property details"><div class="modal" id="modalContent"></div></div>
-<div class="modal-backdrop" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle"><div class="modal" style="max-width:540px;padding:28px"><button class="modal-close" data-close-contact aria-label="Close contact form">×</button><p class="eyebrow">Start a Conversation</p><h2 id="contactModalTitle" class="section-title" style="margin-bottom:8px">Let's find your place.</h2><p class="section-copy" style="margin-top:0;margin-bottom:20px">Tell us a little about what you're looking for and our team will be in touch.</p><form class="contact-form" id="contactForm"><label>Your name<input name="name" autocomplete="name" required placeholder="Full name"></label><label>Email address<input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label><label>I'm interested in<select name="interest"><option>Buying a property</option><option>Property investment</option><option>Selling a property</option><option>Scheduling a viewing</option><option>General enquiry</option></select></label><label>Message<textarea name="message" placeholder="Share any details that may help us..."></textarea></label><button class="btn" type="submit">Send Enquiry <span class="arrow">→</span></button><p class="section-copy" id="contactMessage" aria-live="polite" style="margin:0"></p></form></div></div>
+<div class="modal-backdrop" id="contactModal" role="dialog" aria-modal="true" aria-labelledby="contactModalTitle"><div class="modal" style="max-width:540px;padding:28px"><button class="modal-close" data-close-contact aria-label="Close contact form" data-i18n-aria="contact.closeAria">×</button><p class="eyebrow" data-i18n="contact.eyebrow">Start a Conversation</p><h2 id="contactModalTitle" class="section-title" style="margin-bottom:8px" data-i18n="contact.title">Let's find your place.</h2><p class="section-copy" style="margin-top:0;margin-bottom:20px" data-i18n="contact.copy">Tell us a little about what you're looking for and our team will be in touch.</p><form class="contact-form" id="contactForm"><label><span data-i18n="contact.name">Your name</span><input name="name" autocomplete="name" required placeholder="Full name" data-i18n-placeholder="contact.namePlaceholder"></label><label><span data-i18n="contact.email">Email address</span><input type="email" name="email" autocomplete="email" required placeholder="you@example.com"></label><label><span data-i18n="contact.interest">I'm interested in</span><select name="interest"><option value="buying" data-i18n="contact.i1">Buying a property</option><option value="investment" data-i18n="contact.i2">Property investment</option><option value="selling" data-i18n="contact.i3">Selling a property</option><option value="viewing" data-i18n="contact.i4">Scheduling a viewing</option><option value="general" data-i18n="contact.i5">General enquiry</option></select></label><label><span data-i18n="contact.message">Message</span><textarea name="message" placeholder="Share any details that may help us..." data-i18n-placeholder="contact.messagePlaceholder"></textarea></label><button class="btn" type="submit"><span data-i18n="contact.submit">Send Enquiry</span> <span class="arrow" data-i18n="arrow.next">→</span></button><p class="form-note" data-i18n-html="form.notConnected">This form isn't connected to a server yet, so your message won't be sent. Please call <span dir="ltr">(555) 246-7890</span> or email <span dir="ltr">hello@horizonproperties.com</span>.</p><p class="section-copy" id="contactMessage" aria-live="polite" style="margin:0"></p></form></div></div>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="assets/i18n.js" defer></script>
+<script src="assets/data.js" defer></script>
 <script src="assets/app.js" defer></script>
 </body>
 </html>
